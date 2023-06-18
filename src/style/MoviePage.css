@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* body{
+    background-color: white;
+} */
+.naslov-kategorija{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    margin: 1% 0 0 0;
+}
+.naslov-kategorija::selection{
+    background-color: white;
+    color: red;
+}
+.kategorije{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 5% 2% 2% 2%;
+    border-bottom: 1px solid red;
+    padding: 0 0 20px 0;
+}
+.kategorije li{
+    list-style-type: none;
+    cursor: pointer;
+    color: white;
+}
+.kategorije li::selection{
+    background-color: red;
+}
+.filmovi{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: space-between;
+    width: 80%;
+}
+.filmovi h3{
+    color: red;
+    text-align: center;
+    margin: 15px 0 25px 0;
+}
+.filmovi a{
+    text-decoration: none;
+}
+.film p{
+    color: white;
+    max-width: 100%;
+    text-align: justify;
+    cursor: pointer;
+}
+.sviFilmovi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.film{
+    flex: 1 0 21%;
+    margin: 0 0 5% 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 250px;
+    flex-wrap: wrap;
+}
+.film h3::selection{
+    color: red;
+    background-color: white;
+}
+.film h3:hover{
+    color: rgba(255, 0, 0, 0.5);
+}
+.film p::selection{
+    color: red;
+    background-color: white;
+}
+.film img::selection{
+    background-color: rgba(255, 255, 255, 0.699);
+}
+.film img{
+    border-radius: 10px;
+}
+.kategorije li:hover{
+    color: red;
+    transition: 1s;
+    display: block;
+}
+.list-item.active{
+    border-bottom: 2px solid red;
+    color: red;
+    padding: 0 0 5px 0;
+}
+.dugmici{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+button{
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    margin: 20px 0 100px 0;
+}
+.dugme.active{
+    color: red;
+}

@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.content{
+    width: 60%;
+    height: 100vh;
+    margin-top: 5%;
+    display: flex;
+    color: white;
+    flex-direction: column;
+}
+.naslov{
+    width: 90%;
+    font-size: xx-large;
+    color: red;
+    display: flex;
+    margin: 0 0 3% 0 ;
+    align-items: center;
+    justify-content: center;
+}
+.leva-strana{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 0 5% 0;
+    border-bottom: 2px solid red;
+}
+.slika{
+    width: 30%;
+}
+.tekst{
+    height: 100%;
+    width: 45%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.tekst a{
+    text-decoration: none;
+    color: white;
+}
+.tekst p:first-child{
+    line-height: 24px;
+    text-align: justify;
+    max-width: 70ch;
+}
+.tekst p:last-child{
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.naslov-komentari{
+    width: 85%;
+    font-size: x-large;
+    color: white;
+    display: flex;
+    margin: 0 0 3% 0 ;
+    align-items: center;
+    justify-content: center;
+}
+.comments{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+width: 100%;
+}
+.comment{
+    width: 50%;
+    margin: 0 0 2% 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.p2{
+    width: 100%;
+    background-color: gray;
+    min-height: 55px;
+    border-radius: 0px 10px 10px 10px;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 20px;
+}
+.p1{
+    display: flex;
+    align-self: flex-start;
+}
+.p3{
+    display: flex;
+    align-self: flex-end;
+}
