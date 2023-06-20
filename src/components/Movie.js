@@ -33,7 +33,7 @@ function Movie () {
         const data = await response.json();
         return data
       }
-
+      
     useEffect(() => {
         fetchMovies().then((data) => setMovie(data)).then(fetchImdb(movie.imdbId).then((data) => setLink(data)).catch((error) => {
             console.error('Error:', error);
